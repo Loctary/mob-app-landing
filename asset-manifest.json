@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/mob-app-landing/static/js/main.2fa460e7.chunk.js",
+    "main.js.map": "/mob-app-landing/static/js/main.2fa460e7.chunk.js.map",
+    "runtime~main.js": "/mob-app-landing/static/js/runtime~main.b1d8a9ab.js",
+    "runtime~main.js.map": "/mob-app-landing/static/js/runtime~main.b1d8a9ab.js.map",
+    "static/js/2.86885398.chunk.js": "/mob-app-landing/static/js/2.86885398.chunk.js",
+    "static/js/2.86885398.chunk.js.map": "/mob-app-landing/static/js/2.86885398.chunk.js.map",
+    "index.html": "/mob-app-landing/index.html",
+    "precache-manifest.087944b6397de9e323195ee4ebdeb8b7.js": "/mob-app-landing/precache-manifest.087944b6397de9e323195ee4ebdeb8b7.js",
+    "service-worker.js": "/mob-app-landing/service-worker.js",
+    "static/media/iphonex.png": "/mob-app-landing/static/media/iphonex.9e4c1e3a.png"
+  }
+}
