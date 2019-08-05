@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 // images
 import logo from '../../assets/img/logo.png';
 // styles
 import { NavMenu, NavLink, NavItems, NavButton, NavItemsUl, NavLogo, NavBar } from './styles';
 import { Container, Row, Column, ImgFluid } from '../../styles';
 
-const Header = () => {
-  const [isScrolling, setIsScrolling] = useState(false);
+const Header = ({ isScrolling }) => {
   return (
     <NavMenu isScrolling={isScrolling}>
       <Container>
@@ -45,6 +45,10 @@ const Header = () => {
       </Container>
     </NavMenu>
   );
+};
+
+Header.propTypes = {
+  isScrolling: PropTypes.bool.isRequired,
 };
 
 export default Header;

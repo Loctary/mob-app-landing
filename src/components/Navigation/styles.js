@@ -51,13 +51,11 @@ export const NavButton = styled.a`
   cursor: pointer;
   color: #f8f9fa;
   border: 1px solid #f8f9fa;
+  margin-left: 1rem !important;
   :hover {
     background-color: #f8f9fa;
     color: #d6619c;
     text-decoration: none;
-  }
-  @media (max-width: 992px) {
-    margin-left: 1rem !important;
   }
   @media (max-width: 576px) {
     margin-bottom: 0 !important;

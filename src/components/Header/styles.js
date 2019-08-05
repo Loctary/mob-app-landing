@@ -24,10 +24,16 @@ export const ImgHolder = styled.div`
 `;
 
 export const H1 = styled.h1`
+  font-size: 60px;
   font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-family: inherit;
 `;
 
 export const Tagline = styled.p`
+  font-family: inherit;
   font-size: 23px;
   font-weight: 300;
   color: #ffb8f6;

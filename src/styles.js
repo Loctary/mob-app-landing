@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   //   background: green;
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
 `;
 
 export const Container = styled.div`
@@ -46,4 +46,25 @@ export const Column = styled.div`
 export const ImgFluid = styled.img`
   max-width: 100%;
   height: auto;
+`;
+
+export const Section = styled.section`
+  padding: 80px 0;
+`;
+
+export const Small = styled.small`
+  color: #998a9b;
+  font-size: 80%;
+  font-weight: 400;
+`;
+
+export const SectionTitle = styled.div`
+  text-align: center;
+  margin-bottom: 3rem;
+`;
+
+export const H3 = styled.h3`
+  color: #633991;
+  font-size: 33px;
+  font-weight: 500;
 `;
