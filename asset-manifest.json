@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.js": "/mob-app-landing/static/js/main.2fa460e7.chunk.js",
-    "main.js.map": "/mob-app-landing/static/js/main.2fa460e7.chunk.js.map",
+    "main.js": "/mob-app-landing/static/js/main.4a17c449.chunk.js",
+    "main.js.map": "/mob-app-landing/static/js/main.4a17c449.chunk.js.map",
     "runtime~main.js": "/mob-app-landing/static/js/runtime~main.b1d8a9ab.js",
     "runtime~main.js.map": "/mob-app-landing/static/js/runtime~main.b1d8a9ab.js.map",
-    "static/js/2.86885398.chunk.js": "/mob-app-landing/static/js/2.86885398.chunk.js",
-    "static/js/2.86885398.chunk.js.map": "/mob-app-landing/static/js/2.86885398.chunk.js.map",
+    "static/js/2.97962fae.chunk.js": "/mob-app-landing/static/js/2.97962fae.chunk.js",
+    "static/js/2.97962fae.chunk.js.map": "/mob-app-landing/static/js/2.97962fae.chunk.js.map",
     "index.html": "/mob-app-landing/index.html",
-    "precache-manifest.087944b6397de9e323195ee4ebdeb8b7.js": "/mob-app-landing/precache-manifest.087944b6397de9e323195ee4ebdeb8b7.js",
+    "precache-manifest.3ab08373acff47df71d29df43ce25c69.js": "/mob-app-landing/precache-manifest.3ab08373acff47df71d29df43ce25c69.js",
     "service-worker.js": "/mob-app-landing/service-worker.js",
+    "static/media/client-logos.png": "/mob-app-landing/static/media/client-logos.9439061e.png",
     "static/media/iphonex.png": "/mob-app-landing/static/media/iphonex.9e4c1e3a.png"
   }
 }
