@@ -7,12 +7,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  width: calc100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1140px;
+  @media (min-width: 540px) {
+    width: calc(100% - 30px);
+  }
   @media (min-width: 576px) {
     max-width: 540px;
   }
@@ -22,13 +24,21 @@ export const Container = styled.div`
   @media (min-width: 992px) {
     max-width: 960px;
   }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
 `;
 
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
   margin-right: -15px;
   margin-left: -15px;
+  @media (max-width: 540px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 `;
 
 export const Column = styled.div`
@@ -66,6 +76,23 @@ export const H3 = styled.h3`
   color: #633991;
   font-size: 33px;
   font-weight: 500;
+`;
+
+export const H4 = styled.h4`
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.75rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: #633991;
+  line-height: 1.2;
+`;
+
+export const P = styled.p`
+  font-size: 14px;
+  color: #959094;
+  margin: 0;
+  padding: 0;
 `;
 
 export const Button = styled.button`

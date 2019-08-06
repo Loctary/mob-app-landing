@@ -41,7 +41,10 @@ export const NavLink = styled.a`
   display: block;
   color: rgba(255, 255, 255, 0.5);
   padding: 0.5rem 1rem;
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
   :hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
