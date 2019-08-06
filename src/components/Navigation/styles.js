@@ -17,7 +17,7 @@ export const NavMenu = styled.div`
   ${({ isMenuOpen }) =>
     isMenuOpen &&
     `
-    height: 280px;
+    height: 285px;
   `}
   ${({ isScrolling, isMenuOpen }) =>
     (isScrolling || isMenuOpen) &&
