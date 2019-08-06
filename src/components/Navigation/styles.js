@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { Button } from '../../styles';
 
 export const NavMenu = styled.div`
+  box-sizing: content-box;
   background: transparent;
   padding: 1rem 0;
   transition: all 0.3s ease;
@@ -9,12 +11,29 @@ export const NavMenu = styled.div`
   right: 0;
   left: 0;
   z-index: 1030;
-
+  height: 32px;
+  overflow: hidden;
+  
+  ${({ isMenuOpen }) =>
+    isMenuOpen &&
+    `
+    height: 280px;
+  `}
+  ${({ isScrolling, isMenuOpen }) =>
+    (isScrolling || isMenuOpen) &&
+    `
+    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
+  `}
   ${({ isScrolling }) =>
     isScrolling &&
     `
-    background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
     padding: 0;
+  `}
+  ${({ isScrolling, isMenuOpen }) =>
+    isScrolling &&
+    !isMenuOpen &&
+    `
+    height: 56px;
   `}
 `;
 
@@ -31,6 +50,10 @@ export const NavLink = styled.a`
 
 export const NavItems = styled.div`
   flex-basis: auto;
+  @media (max-width: 992px) {
+    display: block;
+    flex-basis: 100%;
+  }
 `;
 
 export const NavButton = styled.a`
@@ -69,6 +92,11 @@ export const NavItemsUl = styled.ul`
   justify-content: flex-end;
   margin-left: auto;
   list-style: none;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
 `;
 
 export const NavLogo = styled.a`
@@ -88,4 +116,27 @@ export const NavBar = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+`;
+
+export const DropDownSpan = styled.div`
+  width: 30px;
+  height: 30px;
+  ${({ menuImg }) =>
+    menuImg &&
+    `
+    background-image: url(${menuImg});
+  `}
+`;
+export const DropDownButton = styled(Button)`
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  display: none;
+  @media (max-width: 992px) {
+    display: block;
+  }
 `;

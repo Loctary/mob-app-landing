@@ -13,14 +13,14 @@ export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
-  @media (max-width: 992px) {
-    max-width: 960px;
+  @media (min-width: 576px) {
+    max-width: 540px;
   }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     max-width: 720px;
   }
-  @media (max-width: 576px) {
-    max-width: 540px;
+  @media (min-width: 992px) {
+    max-width: 960px;
   }
 `;
 
@@ -37,7 +37,6 @@ export const Column = styled.div`
   padding-right: 15px;
   padding-left: 15px;
   @media (min-width: 768px) {
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -67,4 +66,16 @@ export const H3 = styled.h3`
   color: #633991;
   font-size: 33px;
   font-weight: 500;
+`;
+
+export const Button = styled.button`
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  :hover {
+    background: transparent;
+  }
 `;

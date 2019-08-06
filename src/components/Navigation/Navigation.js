@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 // images
 import logo from '../../assets/img/logo.png';
 // styles
-import { NavMenu, NavLink, NavItems, NavButton, NavItemsUl, NavLogo, NavBar } from './styles';
+
+import {
+  NavMenu,
+  NavLink,
+  NavItems,
+  NavButton,
+  NavItemsUl,
+  NavLogo,
+  NavBar,
+  DropDownSpan,
+  DropDownButton,
+} from './styles';
 import { Container, Row, Column, ImgFluid } from '../../styles';
 
 const Header = ({ isScrolling }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <NavMenu isScrolling={isScrolling}>
+    <NavMenu isScrolling={isScrolling} isMenuOpen={isMenuOpen}>
       <Container>
         <Row>
           <Column>
@@ -16,8 +28,10 @@ const Header = ({ isScrolling }) => {
               <NavLogo href="index.html">
                 <ImgFluid src={logo} alt="logo" />
               </NavLogo>
-              <button type="button" style={{ display: 'none' }} className="navbar-toggler" />
-              <NavItems className="navbar-collapse">
+              <DropDownButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <DropDownSpan menuImg={`${process.env.PUBLIC_URL}/menu.svg`} />
+              </DropDownButton>
+              <NavItems>
                 <NavItemsUl>
                   <li>
                     <NavLink href="#home">HOME</NavLink>
