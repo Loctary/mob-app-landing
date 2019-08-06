@@ -1,17 +1,17 @@
 import React from 'react';
 // styled components
-import { Row, P, H4 } from '../../styles';
+import { P, H4 } from '../../styles';
 import { Card, CardBody, Column, FeatureIcon } from './styles';
 
-const FeatureCard = () => {
+const FeatureCard = ({ content, title, text }) => {
   return (
     <Column>
       <Card>
         <CardBody>
-          <FeatureIcon />
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-            <H4>Simple</H4>
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque </P>
+          <FeatureIcon content={content} />
+          <div>
+            <H4>{title}</H4>
+            <P>L{text}</P>
           </div>
         </CardBody>
       </Card>

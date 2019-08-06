@@ -4,6 +4,7 @@ import Navigation from './components/Navigation/Navigation';
 import Header from './components/Header/Header';
 import ClientLogos from './components/ClientLogos/ClientLogos';
 import Features from './components/Features/Features';
+import Discover from './components/Discover/Discover';
 // styled components
 import { Wrapper } from './styles';
 
@@ -32,6 +33,7 @@ class App extends React.Component {
         <Header />
         <ClientLogos />
         <Features />
+        <Discover />
         <div style={{ height: 1000, background: 'green' }} />
       </Wrapper>
     );

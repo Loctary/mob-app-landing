@@ -72,6 +72,14 @@ export const SectionTitle = styled.div`
   margin-bottom: 3rem;
 `;
 
+export const H2 = styled.h2`
+  font-size: 45px;
+  font-weight: 300;
+  color: #633991;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+`;
+
 export const H3 = styled.h3`
   color: #633991;
   font-size: 33px;
@@ -104,5 +112,53 @@ export const Button = styled.button`
   font-family: inherit;
   :hover {
     background: transparent;
+  }
+`;
+
+export const ButtonA = styled.a`
+  border-radius: 3px;
+  background-image: linear-gradient(122deg, #e54595 0%, #fd378e 100%);
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  padding: 0.6rem 2rem;
+  border: 0;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1.5;
+  border-radius: 3px;
+  :hover {
+    background-image: linear-gradient(122deg, #fd378e 0%, #e54595 100%);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
+  }
+`;
+
+export const FeatureIcon = styled.span`
+  font-family: 'themify';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 3em;
+  box-sizing: border-box;
+  :before {
+    content: "\\e71f";
+    ${({ content }) => content && `content: "${content}";`}
+    color: #fc73b4;
+    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-box;
   }
 `;

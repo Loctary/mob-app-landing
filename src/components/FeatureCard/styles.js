@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Column as ColumnOriginal, Row as RowOriginal } from '../../styles';
+import { Column as ColumnOriginal, FeatureIcon as FeatureIconOriginal } from '../../styles';
 
 export const Card = styled.div`
   border: 0;
@@ -16,7 +16,7 @@ export const Card = styled.div`
     top: 0;
     bottom: 0;
     left: 15px;
-    @media (max-width: 991px) {
+    @media (max-width: 992px) {
       height: calc(100% - 2rem);
     }
   }
@@ -52,26 +52,6 @@ export const Column = styled(ColumnOriginal)`
   }
 `;
 
-export const FeatureIcon = styled.span`
-  font-family: 'themify';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  font-size: 3em;
+export const FeatureIcon = styled(FeatureIconOriginal)`
   margin-right: 1rem !important;
-  box-sizing: border-box;
-  :before {
-    content: "\\e71f";
-    ${({ content }) => content && `content: ${content};`}
-    color: #fc73b4;
-    background: linear-gradient(to bottom, #9477b4 0%, #fc73b4 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-box;
-  }
 `;
