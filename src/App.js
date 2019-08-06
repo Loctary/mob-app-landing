@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Header from './components/Header/Header';
 import ClientLogos from './components/ClientLogos/ClientLogos';
-import Features from './components/Features/Features';
+import Highlights from './components/Highlights/Highlights';
 import Discover from './components/Discover/Discover';
 // styled components
 import { Wrapper } from './styles';
@@ -32,7 +32,7 @@ class App extends React.Component {
         <Navigation isScrolling={isScrolling} />
         <Header />
         <ClientLogos />
-        <Features />
+        <Highlights />
         <Discover />
         <div style={{ height: 1000, background: 'green' }} />
       </Wrapper>

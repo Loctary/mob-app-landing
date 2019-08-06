@@ -1,13 +1,13 @@
 import React from 'react';
 // components
-import FeatureCard from '../FeatureCard/FeatureCard';
+import HighlightCard from '../HighlightCard/HighlightCard';
 // styled components
 import { Section, Row } from './styles';
 import { Container, Small, SectionTitle, H3 } from '../../styles';
 
 const text = 'orem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque ';
 
-const Featues = () => {
+const Highlights = () => {
   return (
     <Section>
       <Container>
@@ -15,9 +15,9 @@ const Featues = () => {
           <Small>HIGHLIGHTS</Small>
           <H3>Features you love</H3>
           <Row>
-            <FeatureCard text={text} content="\e71f" title="Simple" />
-            <FeatureCard text={text} content="\e60f" title="Customize" />
-            <FeatureCard text={text} content="\e62b" title="Secure" />
+            <HighlightCard text={text} content="\e71f" title="Simple" />
+            <HighlightCard text={text} content="\e60f" title="Customize" />
+            <HighlightCard text={text} content="\e62b" title="Secure" />
           </Row>
         </SectionTitle>
       </Container>
@@ -25,4 +25,4 @@ const Featues = () => {
   );
 };
 
-export default Featues;
+export default Highlights;

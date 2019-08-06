@@ -52,6 +52,6 @@ export const Column = styled(ColumnOriginal)`
   }
 `;
 
-export const FeatureIcon = styled(FeatureIconOriginal)`
+export const HighlightIcon = styled(FeatureIconOriginal)`
   margin-right: 1rem !important;
 `;
