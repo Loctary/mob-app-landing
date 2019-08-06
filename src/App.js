@@ -6,6 +6,7 @@ import ClientLogos from './components/ClientLogos/ClientLogos';
 import Highlights from './components/Highlights/Highlights';
 import Discover from './components/Discover/Discover';
 import Features from './components/Features/Features';
+import Launch from './components/Launch/Launch';
 // styled components
 import { Wrapper } from './styles';
 
@@ -36,6 +37,7 @@ class App extends React.Component {
         <Highlights />
         <Discover />
         <Features />
+        <Launch />
         <div style={{ height: 1000, background: 'green' }} />
       </Wrapper>
     );

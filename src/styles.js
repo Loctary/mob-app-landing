@@ -162,3 +162,14 @@ export const FeatureIcon = styled.span`
     border-box;
   }
 `;
+
+export const BoxIcon = styled.div`
+  box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+  padding: 10px;
+  width: 70px;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  text-align: center;
+`;

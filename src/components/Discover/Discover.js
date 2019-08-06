@@ -1,7 +1,7 @@
 import React from 'react';
 // styled components
-import { Section, Container, Row, FeatureIcon, H2, ButtonA } from '../../styles';
-import { BoxIcon, P, Column, ImgFluid } from './styles';
+import { BoxIcon, Section, Container, Row, FeatureIcon, H2, ButtonA } from '../../styles';
+import { P, Column, ImgFluid } from './styles';
 // img
 import perspective from '../../assets/img/perspective.png';
 
