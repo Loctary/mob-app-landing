@@ -2,14 +2,14 @@ import React from 'react';
 // components
 import HighlightCard from '../HighlightCard/HighlightCard';
 // styled components
-import { Section, Row } from './styles';
-import { Container, Small, SectionTitle, H3 } from '../../styles';
+import { Row } from './styles';
+import { Section, Container, Small, SectionTitle, H3 } from '../../styles';
 
-const text = 'orem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque ';
+const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque ';
 
 const Highlights = () => {
   return (
-    <Section>
+    <Section isDark>
       <Container>
         <SectionTitle>
           <Small>HIGHLIGHTS</Small>

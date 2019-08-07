@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Tabs } from 'react-tabs';
 // styled components
-import { Container, Small, SectionTitle, H3, H2 } from '../../styles';
-import { Section, TabContent, P, PPink, ImgFluid, Tab, TabPanel, TabList, AnimatedArea } from './styles';
+import { Section, Container, Small, SectionTitle, H3, H2 } from '../../styles';
+import { TabContent, P, PPink, ImgFluid, Tab, TabPanel, TabList, AnimatedArea } from './styles';
 // img
 import graphic from '../../assets/img/graphic.png';
 
@@ -43,7 +43,7 @@ DemoContent.defaultProps = {
 const Features = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
-    <Section>
+    <Section isDark>
       <Container>
         <SectionTitle>
           <Small>FEATURES</Small>

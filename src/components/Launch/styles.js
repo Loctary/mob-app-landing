@@ -24,7 +24,7 @@ export const Column = styled(ColumnOriginal)`
     flex: 0 0 50%;
     max-width: 50%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     flex: 0 0 100%;
     max-width: 100%;
   }

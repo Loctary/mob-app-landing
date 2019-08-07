@@ -45,7 +45,5 @@ export const Tagline = styled.p`
 `;
 
 export const Container = styled(ContainerOriginal)`
-  && {
-    margin-top: 3rem !important;
-  }
+  margin-top: 3rem !important;
 `;

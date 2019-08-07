@@ -1,11 +1,7 @@
 import styled from 'styled-components';
 import { TabPanel as TabPanelOriginal, Tab as TabOriginal, TabList as TabListOriginal } from 'react-tabs';
 
-import { Section as SectionOriginal, P as POriginal, ImgFluid as ImgFluidOriginal } from '../../styles';
-
-export const Section = styled(SectionOriginal)`
-  background: #faf6fb;
-`;
+import { P as POriginal, ImgFluid as ImgFluidOriginal } from '../../styles';
 
 export const ImgFluid = styled(ImgFluidOriginal)`
   align-self: flex-start;
@@ -73,6 +69,7 @@ export const Tab = styled(TabOriginal)`
   cursor: pointer;
   flex-basis: 25%;
   white-space: nowrap;
+  text-align: center;
   ${({ isActive }) =>
     `
       border-color: ${isActive ? '#ce75b4' : '#faf6fb'} #faf6fb #FFF;

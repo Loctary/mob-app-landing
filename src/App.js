@@ -7,6 +7,8 @@ import Highlights from './components/Highlights/Highlights';
 import Discover from './components/Discover/Discover';
 import Features from './components/Features/Features';
 import Launch from './components/Launch/Launch';
+import Steps from './components/Steps/Steps';
+import Testimonials from './components/Testimonials/Testimonials';
 // styled components
 import { Wrapper } from './styles';
 
@@ -38,6 +40,8 @@ class App extends React.Component {
         <Discover />
         <Features />
         <Launch />
+        <Steps />
+        <Testimonials />
         <div style={{ height: 1000, background: 'green' }} />
       </Wrapper>
     );

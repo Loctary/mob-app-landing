@@ -7,9 +7,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  width: calc100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   @media (min-width: 540px) {
@@ -59,6 +57,7 @@ export const ImgFluid = styled.img`
 
 export const Section = styled.section`
   padding: 80px 0;
+  ${({ isDark }) => `background: ${isDark ? '#faf6fb' : '#fff'};`}
 `;
 
 export const Small = styled.small`
@@ -84,6 +83,7 @@ export const H3 = styled.h3`
   color: #633991;
   font-size: 33px;
   font-weight: 500;
+  margin-top: 0;
 `;
 
 export const H4 = styled.h4`
@@ -96,8 +96,18 @@ export const H4 = styled.h4`
   line-height: 1.2;
 `;
 
+export const H5 = styled.h5`
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: 300;
+  color: #633991;
+  margin-bottom: 0.7rem;
+`;
+
 export const P = styled.p`
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
   color: #959094;
   margin: 0;
   padding: 0;
