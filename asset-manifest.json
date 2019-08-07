@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.js": "/mob-app-landing/static/js/main.43ffc839.chunk.js",
-    "main.js.map": "/mob-app-landing/static/js/main.43ffc839.chunk.js.map",
+    "main.css": "/mob-app-landing/static/css/main.33ca6c35.chunk.css",
+    "main.js": "/mob-app-landing/static/js/main.a6d74390.chunk.js",
+    "main.js.map": "/mob-app-landing/static/js/main.a6d74390.chunk.js.map",
     "runtime~main.js": "/mob-app-landing/static/js/runtime~main.b1d8a9ab.js",
     "runtime~main.js.map": "/mob-app-landing/static/js/runtime~main.b1d8a9ab.js.map",
-    "static/js/2.305f570d.chunk.js": "/mob-app-landing/static/js/2.305f570d.chunk.js",
-    "static/js/2.305f570d.chunk.js.map": "/mob-app-landing/static/js/2.305f570d.chunk.js.map",
+    "static/js/2.1a64dd20.chunk.js": "/mob-app-landing/static/js/2.1a64dd20.chunk.js",
+    "static/js/2.1a64dd20.chunk.js.map": "/mob-app-landing/static/js/2.1a64dd20.chunk.js.map",
     "index.html": "/mob-app-landing/index.html",
-    "precache-manifest.e4e0f16379fb8f1968e5735684a438c7.js": "/mob-app-landing/precache-manifest.e4e0f16379fb8f1968e5735684a438c7.js",
+    "precache-manifest.b74f28a6a536b9153bd639e88dc861e4.js": "/mob-app-landing/precache-manifest.b74f28a6a536b9153bd639e88dc861e4.js",
     "service-worker.js": "/mob-app-landing/service-worker.js",
+    "static/css/main.33ca6c35.chunk.css.map": "/mob-app-landing/static/css/main.33ca6c35.chunk.css.map",
     "static/media/client-logos.png": "/mob-app-landing/static/media/client-logos.9439061e.png",
+    "static/media/client.png": "/mob-app-landing/static/media/client.6c4badf1.png",
     "static/media/dualphone.png": "/mob-app-landing/static/media/dualphone.31bec8b0.png",
     "static/media/graphic.png": "/mob-app-landing/static/media/graphic.f60ba53a.png",
     "static/media/iphonex.png": "/mob-app-landing/static/media/iphonex.9e4c1e3a.png",
-    "static/media/perspective.png": "/mob-app-landing/static/media/perspective.ef320677.png"
+    "static/media/perspective.png": "/mob-app-landing/static/media/perspective.ef320677.png",
+    "static/media/screen1.jpg": "/mob-app-landing/static/media/screen1.09f3c1dd.jpg",
+    "static/media/screen2.jpg": "/mob-app-landing/static/media/screen2.7197f0f5.jpg",
+    "static/media/screen3.jpg": "/mob-app-landing/static/media/screen3.42b0ae69.jpg"
   }
 }
