@@ -11,6 +11,7 @@ import Steps from './components/Steps/Steps';
 import Testimonials from './components/Testimonials/Testimonials';
 import Gallery from './components/Gallery/Gallery';
 import Pricing from './components/Pricing/Pricing';
+import FAQ from './components/FAQ/FAQ';
 // styled components
 import { Wrapper } from './styles';
 
@@ -46,6 +47,7 @@ class App extends React.Component {
         <Testimonials />
         <Gallery />
         <Pricing />
+        <FAQ />
         <div style={{ height: 1000, background: 'green' }} />
       </Wrapper>
     );
