@@ -9,6 +9,8 @@ import Features from './components/Features/Features';
 import Launch from './components/Launch/Launch';
 import Steps from './components/Steps/Steps';
 import Testimonials from './components/Testimonials/Testimonials';
+import Gallery from './components/Gallery/Gallery';
+import Pricing from './components/Pricing/Pricing';
 // styled components
 import { Wrapper } from './styles';
 
@@ -42,6 +44,8 @@ class App extends React.Component {
         <Launch />
         <Steps />
         <Testimonials />
+        <Gallery />
+        <Pricing />
         <div style={{ height: 1000, background: 'green' }} />
       </Wrapper>
     );

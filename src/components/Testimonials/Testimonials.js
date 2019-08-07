@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 // styled components
 import { Section, Container, Small, SectionTitle, H3, P } from '../../styles';
@@ -28,17 +28,17 @@ const Testimonials = () => {
         <SectionTitle>
           <Small>Testimonials</Small>
           <H3>What our Customers Says</H3>
-          <Row>
-            <OwlCarousel className="owl-theme" margin={10} nav items={1} dots={false}>
-              {[...Array(3)].map((_, index) => (
-                <TestimonialItem key={`owl.item#${index + 1}`} />
-              ))}
-            </OwlCarousel>
-          </Row>
         </SectionTitle>
+        <Row>
+          <OwlCarousel className="owl-theme" margin={10} nav items={1} dots={false}>
+            {[...Array(3)].map((_, index) => (
+              <TestimonialItem key={`owl.item#${index + 1}`} />
+            ))}
+          </OwlCarousel>
+        </Row>
       </Container>
     </Section>
   );
 };
 
-export default Testimonials;
+export default memo(Testimonials);

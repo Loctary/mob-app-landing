@@ -35,6 +35,9 @@ export const NavMenu = styled.div`
     `
     height: 56px;
   `}
+  @media (min-width: 992px) {
+    height: 56px !important;
+  }
 `;
 
 export const NavLink = styled.a`
