@@ -49,13 +49,7 @@ const Features = () => {
           <Small>FEATURES</Small>
           <H3>Do more with our app</H3>
         </SectionTitle>
-        <Tabs
-          defaultIndex={0}
-          onSelect={index => {
-            console.log(index);
-            return setActiveTab(index);
-          }}
-        >
+        <Tabs defaultIndex={0} onSelect={index => setActiveTab(index)}>
           <TabList>
             <Tab isActive={activeTab === 0}>Communication</Tab>
             <Tab isActive={activeTab === 1}>Scheduling</Tab>

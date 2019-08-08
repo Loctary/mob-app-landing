@@ -183,3 +183,13 @@ export const BoxIcon = styled.div`
   background-color: #fff;
   text-align: center;
 `;
+
+export const Link = styled.a`
+  margin: 0.5rem;
+  color: #e38cb7;
+  text-decoration: none;
+  cursor: pointer !important;
+  :hover {
+    text-decoration: underline;
+  }
+`;

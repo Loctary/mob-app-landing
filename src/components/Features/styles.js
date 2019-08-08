@@ -75,8 +75,6 @@ export const Tab = styled(TabOriginal)`
       border-color: ${isActive ? '#ce75b4' : '#faf6fb'} #faf6fb #FFF;
       background: ${isActive ? '#fff' : '#f5eff7'};
       border-top: ${isActive ? '3px solid #ce75b4 ' : '0'};
-      // margin: ${isActive ? '2px 2px 0' : '2px'};
-      // padding: ${isActive ? '1rem 1rem calc(1rem + 1px)' : '1rem'};
   `}
 `;
 

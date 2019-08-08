@@ -1,19 +1,25 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 // styled components
 import { Container, SectionTitle, H3, Small } from '../../styles';
 import { Section, H4, P, Row, Column } from './styles';
 
-const FAQCard = () => {
+const FAQCard = ({ title, text }) => {
   return (
     <Fragment>
-      <H4>Can I try before I buy?</H4>
-      <P>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi
-        fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante.
-      </P>
+      <H4>{title}</H4>
+      <P>{text}</P>
     </Fragment>
   );
 };
+
+FAQCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
+
+const text =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque pretium, nisi nisi fermentum enim, et sagittis dolor nulla vel sapien. Vestibulum sit amet mattis ante.';
 
 const FAQ = () => {
   return (
@@ -24,12 +30,12 @@ const FAQ = () => {
           <H3>Frequently Asked Questions</H3>
           <Row>
             <Column>
-              <FAQCard />
-              <FAQCard />
+              <FAQCard title="Can I try before I buy?" text={text} />
+              <FAQCard title="What payment methods do you accept?" text={text} />
             </Column>
             <Column>
-              <FAQCard />
-              <FAQCard />
+              <FAQCard title="Can I change my plan later?" text={text} />
+              <FAQCard title="Do you have a contract?" text={text} />
             </Column>
           </Row>
         </SectionTitle>

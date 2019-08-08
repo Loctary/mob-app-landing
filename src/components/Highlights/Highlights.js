@@ -1,9 +1,30 @@
 import React from 'react';
-// components
-import HighlightCard from '../HighlightCard/HighlightCard';
+import PropTypes from 'prop-types';
 // styled components
-import { Row } from './styles';
-import { Section, Container, Small, SectionTitle, H3 } from '../../styles';
+import { Row, Card, CardBody, Column, HighlightIcon } from './styles';
+import { Section, Container, Small, SectionTitle, P, H3, H4 } from '../../styles';
+
+const HighlightCard = ({ content, title, text }) => {
+  return (
+    <Column>
+      <Card>
+        <CardBody>
+          <HighlightIcon content={content} />
+          <div>
+            <H4>{title}</H4>
+            <P>L{text}</P>
+          </div>
+        </CardBody>
+      </Card>
+    </Column>
+  );
+};
+
+HighlightCard.propTypes = {
+  content: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum, urna eu pellentesque ';
 
