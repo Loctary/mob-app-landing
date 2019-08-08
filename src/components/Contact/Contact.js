@@ -5,7 +5,7 @@ import { Column, FeatureIcon, WrapperContact, P, Link, SocialIcons, SocialIcon }
 
 const Contact = () => {
   return (
-    <Section isDark>
+    <Section isDark id="contact">
       <Container>
         <Row>
           <Column>

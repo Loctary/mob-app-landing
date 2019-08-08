@@ -27,7 +27,7 @@ const responsiveConfig = {
 
 const Screenshots = () => {
   return (
-    <Section isDark>
+    <Section isDark id="gallery">
       <ContainerMargin>
         <SectionTitle>
           <Small>GALLERY</Small>

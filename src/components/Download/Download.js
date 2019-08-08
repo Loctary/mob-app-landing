@@ -8,7 +8,7 @@ import playicon from '../../assets/img/playicon.png';
 
 const Donload = () => {
   return (
-    <Section>
+    <Section id="download">
       <Container>
         <WrapperDownload>
           <WrapperIcon>

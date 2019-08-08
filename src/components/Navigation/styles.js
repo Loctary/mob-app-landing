@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 import { Button } from '../../styles';
 
 export const NavMenu = styled.div`
@@ -40,7 +41,7 @@ export const NavMenu = styled.div`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   display: block;
   color: rgba(255, 255, 255, 0.5);
   padding: 0.5rem 1rem;
@@ -48,10 +49,15 @@ export const NavLink = styled.a`
   font-weight: 400;
   line-height: 1.5;
   text-decoration: none;
+  cursor: pointer;
   :hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.75);
   }
+  active {
+    color: #fff;
+  }
+  ${({ active }) => active && `color: #fff;`}
 `;
 
 export const NavItems = styled.div`

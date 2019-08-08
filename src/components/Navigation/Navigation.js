@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 // images
 import logo from '../../assets/img/logo.png';
-// styles
-
+// styled components
 import {
   NavMenu,
   NavLink,
@@ -16,9 +15,12 @@ import {
   DropDownButton,
 } from './styles';
 import { Container, Row, Column, ImgFluid } from '../../styles';
+// css
+import './style.css';
 
 const Header = ({ isScrolling }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleSetActive = () => setIsMenuOpen(false);
   return (
     <NavMenu isScrolling={isScrolling} isMenuOpen={isMenuOpen}>
       <Container>
@@ -34,22 +36,64 @@ const Header = ({ isScrolling }) => {
               <NavItems>
                 <NavItemsUl>
                   <li>
-                    <NavLink href="#home">HOME</NavLink>
+                    <NavLink activeClass="active" to="home" spy smooth duration={1000} onClick={handleSetActive}>
+                      HOME
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="#features">FEATURES</NavLink>
+                    <NavLink
+                      activeClass="active"
+                      to="features"
+                      spy
+                      smooth
+                      duration={1000}
+                      offset={-56}
+                      onClick={handleSetActive}
+                    >
+                      FEATURES
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="#gallery">GALLERY</NavLink>
+                    <NavLink
+                      activeClass="active"
+                      to="gallery"
+                      spy
+                      smooth
+                      duration={1000}
+                      offset={-56}
+                      onClick={handleSetActive}
+                    >
+                      GALLERY
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="#pricing">PRICING</NavLink>
+                    <NavLink
+                      activeClass="active"
+                      to="pricing"
+                      spy
+                      smooth
+                      duration={1000}
+                      offset={-56}
+                      onClick={handleSetActive}
+                    >
+                      PRICING
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink href="#contact">CONTACT</NavLink>
+                    <NavLink
+                      activeClass="active"
+                      to="contact"
+                      spy
+                      smooth
+                      duration={1000}
+                      offset={-56}
+                      onClick={handleSetActive}
+                    >
+                      CONTACT
+                    </NavLink>
                   </li>
                   <li>
-                    <NavButton href="#">DOWNLOAD</NavButton>
+                    <NavButton>DOWNLOAD</NavButton>
                   </li>
                 </NavItemsUl>
               </NavItems>

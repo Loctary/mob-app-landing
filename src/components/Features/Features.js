@@ -43,7 +43,7 @@ DemoContent.defaultProps = {
 const Features = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
-    <Section isDark>
+    <Section isDark id="features">
       <Container>
         <SectionTitle>
           <Small>FEATURES</Small>

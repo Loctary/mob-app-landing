@@ -66,7 +66,7 @@ const values = [
 
 const Pricing = () => {
   return (
-    <Section>
+    <Section id="pricing">
       <Container>
         <SectionTitle>
           <Small>PRICING</Small>

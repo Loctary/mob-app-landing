@@ -1,0 +1,17 @@
+.active {
+    position: relative;
+    color: #fff;
+}
+
+
+@media (min-width: 992px) {
+    .active::after{
+        content: "";
+        border-bottom: 2px solid #cd99d4;
+        left: 1rem;
+        right: 1rem;
+        bottom: 5px;
+        height: 1px;
+        position: absolute;
+    }
+}

@@ -19,7 +19,10 @@ import Footer from './components/Footer/Footer';
 import { Wrapper } from './styles';
 
 class App extends React.Component {
-  state = { isScrolling: false };
+  constructor(props) {
+    super(props);
+    this.state = { isScrolling: false };
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.scrollHandler);
